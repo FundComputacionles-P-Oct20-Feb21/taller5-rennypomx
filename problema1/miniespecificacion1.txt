@@ -1,0 +1,27 @@
+1. Inicio
+//declarar variables
+2. edad, i[18,80]
+3. costo_kilovatio_hora, d[0,n]
+4. kilovatios, d[0,n]
+5. planilla, d[0,n]
+6. descuento, d[0,n]
+7. planilla_descuento, d[0,n]
+//pedir datos por teclado - entradas
+8. Escribir "Ingresar edad del usuario"
+9. Leer edad
+10. Escribir "Ingresar el costo del kilovatio/hora"
+11. Leer costo_kilovatio_hora
+12. Escribir "Ingresar el número de kilovatios consumidos en el mes"
+13. Leer kilovatios
+//proceso
+14. planilla <-- costo_kilovatio_hora * kilovatios
+15. descuento <-- planilla * 0,1  //10%
+16. planilla_descuento <-- planilla - descuento
+//salida
+17. Si edad > 65 entonces
+18. 	Escribir "El valor de su planilla con el 10% de descuento es: " + planilla_descuento
+19. De lo contrario
+20. 	Escribir "El valor de su planilla es: " + planilla
+21. Fin Si
+
+22. Fin

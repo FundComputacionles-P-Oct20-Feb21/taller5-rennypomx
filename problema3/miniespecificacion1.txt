@@ -1,0 +1,49 @@
+1. Inicio
+//declarar variables
+2. numeroDias, i[0,n]
+3. precioDiario, d[0,n]
+4. subTotal, d[0,n]
+5. descuentoNulo <-- 0
+6. descuento1, d[0,n]
+7. descuento2, d[0,n]
+8. descuento3, d[0,n]
+9. totalDescuento1, d[0,n]
+10. totalDescuento2, d[0,n]
+11. totalDescuento3, d[0,n]
+//pedir datos por teclado - entradas
+12. Escribir "Ingresar número de días que se ha hospedado en la hosteria"
+13. Leer numeroDias
+14. Escribir "Ingresar el precio diario de la habitación"
+15. Leer precioDiario
+//proceso
+16. subTotal <-- numeroDias * precioDiario
+17. descuento1 <-- subTotal * 0,1  //10%
+18. descuento2 <-- subTotal * 0,15  //15%
+19. descuento3 <-- subTotal * 0,2  //20%
+20. totalDescuento1 <-- subTotal - descuento1
+21. totalDescuento2 <-- subTotal - descuento2
+22. totalDescuento3 <-- subTotal - descuento3
+//salida
+23. Si numeroDias > 15 entonces
+24.   Escribir "Subtotal por pagar: " + subTotal
+25.   Escribir "Descuento: " + descuento3
+26.   Escribir "Total por pagar: " + totalDescuento
+27. De lo contrario
+28.   Si numeroDias > 10 entonces
+29.   Escribir "Subtotal por pagar: " + subTotal
+30.   Escribir "Descuento: " + descuento2
+31.   Escribir "Total por pagar: " + totalDescuento2
+32. De lo contrario
+33.    Si numeroDias > 5 entonces
+34.    Escribir "Subtotal por pagar: " + subTotal
+35.    Escribir "Descuento: " + descuento1
+36.    Escribir "Total por pagar: " + totalDescuento1
+37.  De lo contrario
+38.    Escribir "Subtotal por pagar: " + subTotal
+39.    Escribir "Descuento: " + descuentoNulo
+40.    Escribir "Total por pagar: " + subTotal
+41. Fin Si
+42. Fin Si
+43. Fin Si
+
+44. Fin
